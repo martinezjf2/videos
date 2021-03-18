@@ -19,7 +19,6 @@ export default class App extends React.Component {
         return (
             <div className="ui container">
                 <h1><SearchBar onFormSubmit={this.onTermSubmit}/></h1>
-                I have {this.state.videos.length} videos.
                 <VideoList videos={this.state.videos}/>
             </div>
         )
