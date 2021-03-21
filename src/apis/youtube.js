@@ -10,3 +10,5 @@ export default axios.create({
         key: KEY
     }
 })
+
+// used axios to fetch data
