@@ -6,6 +6,11 @@ import VideoDetail from './components/VideoDetail'
 
 export default class App extends React.Component {
     state = { videos: [], selectedVideo: null }
+
+    componentDidMount() {
+        this.onTermSubmit('buildings')
+        // when application first loads, we will see buildings
+    }
     
    onTermSubmit = async term => {
     const response = await youtube.get('/search', {
